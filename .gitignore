@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+
+# Local data and generated media
+/input/
+/output/
+/cache/
+*.wav
+*.srt
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.webm
+*.m4v
+*.pt
+
+# Local credentials and editor/OS files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
