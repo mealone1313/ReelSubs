@@ -1,4 +1,4 @@
-# Video Forensics AI
+# ReelSubs
 
 A Linux desktop app that extracts audio from a video, transcribes it with
 OpenAI Whisper, matches transcript segments to pyannote speaker turns, and saves
@@ -20,24 +20,25 @@ an SRT subtitle file.
 
 ## Install
 
-Clone this repository, then run the included installer:
+From the project directory, run the included installer:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/video-forensics-ai.git
-cd video-forensics-ai
+cd /path/to/ReelSubs
 ./install.sh
 ```
 
 The installer installs system dependencies and creates
-`~/video-forensics-ai`. Launch the app with:
+`~/ReelSubs`. Launch the app with:
 
 ```bash
-source ~/video-forensics-ai/venv/bin/activate
-python ~/video-forensics-ai/app.py
+source ~/ReelSubs/venv/bin/activate
+python ~/ReelSubs/app.py
 ```
 
 The installer uses `sudo` to install Fedora packages. It may prompt you for your
 system password.
+
+
 
 ## First use
 
@@ -57,23 +58,6 @@ The helper tests use only the Python standard library:
 ```bash
 python3 -m unittest -v
 ```
-
-## Upload your own copy to GitHub
-
-Create an empty repository on GitHub (without pre-creating a README), then from
-this project folder run:
-
-```bash
-git init -b main
-git add .
-git commit -m "Initial Video Forensics AI app"
-git remote add origin https://github.com/YOUR-USERNAME/video-forensics-ai.git
-git push -u origin main
-```
-
-Replace `YOUR-USERNAME` with your GitHub username. The `.gitignore` excludes
-virtual environments, generated media/subtitles, model files, and local
-credentials.
 
 ## Notes
 
