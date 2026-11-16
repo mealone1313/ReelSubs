@@ -1,0 +1,2 @@
+openai-whisper
+pyannote.audio>=3.4,<4
